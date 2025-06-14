@@ -1,3 +1,12 @@
+<script setup>
+const { data: articles } = await useFetch('/api/rss')
+
+function formatDate(dateStr) {
+  const date = new Date(dateStr)
+  return isNaN(date) ? 'Unknown date' : date.toLocaleDateString()
+}
+</script>
+
 <template>
   <div class="p-6">
     <h1 class="text-2xl font-bold mb-4">News Feed</h1>
@@ -13,12 +22,3 @@
     </ul>
   </div>
 </template>
-
-<script setup>
-const { data: articles } = await useFetch('/api/rss')
-
-function formatDate(dateStr) {
-  const date = new Date(dateStr)
-  return isNaN(date) ? 'Unknown date' : date.toLocaleDateString()
-}
-</script>
