@@ -28,5 +28,5 @@ export default defineEventHandler(async () => {
 	// Sort by date descending
 	allItems.sort((a, b) => new Date(b.date) - new Date(a.date))
 
-	return allItems.slice(0, 10) // return top 10 combined articles
+	return allItems
 })
