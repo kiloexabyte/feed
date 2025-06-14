@@ -1,20 +1,37 @@
 {
-  "name": "nuxt-app",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "dependencies": {
-    "@tailwindcss/vite": "^4.1.10",
-    "nuxt": "^3.17.5",
-    "rss-parser": "^3.13.0",
-    "tailwindcss": "^4.1.10",
-    "vue": "^3.5.16",
-    "vue-router": "^4.5.1"
-  }
+	"name": "nuxt-app",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare",
+		"pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json,vue}\"",
+		"prettyCheck": "npx prettier --check \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json,vue}\""
+	},
+	"dependencies": {
+		"@tailwindcss/vite": "^4.1.10",
+		"nuxt": "^3.17.5",
+		"rss-parser": "^3.13.0",
+		"tailwindcss": "^4.1.10",
+		"vue": "^3.5.16",
+		"vue-router": "^4.5.1"
+	},
+	"devDependencies": {
+		"prettier": "^3.5.3",
+		"prettier-plugin-tailwindcss": "^0.6.12"
+	},
+	"prettier": {
+		"semi": false,
+		"singleQuote": false,
+		"useTabs": true,
+		"trailingComma": "none",
+		"bracketSpacing": true,
+		"arrowParens": "always",
+		"plugins": [
+			"prettier-plugin-tailwindcss"
+		]
+	}
 }
