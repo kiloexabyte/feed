@@ -3,7 +3,6 @@ type ArticleProps = {
 	title: string
 	author: string
 	publishedDate: string
-	summary: string
 	link: string
 }
 
