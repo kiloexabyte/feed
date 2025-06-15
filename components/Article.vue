@@ -4,12 +4,16 @@ type ArticleProps = {
 	author: string;
 	publishedDate: string;
 	link: string;
+	category: string;
 };
 
 const props = defineProps<ArticleProps>();
 </script>
 
 <template>
+	<div>
+		{{ props.category }}
+	</div>
 	<a
 		:href="props.link"
 		target="_blank"
