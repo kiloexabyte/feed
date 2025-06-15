@@ -16,7 +16,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container: 
-      image: kiloexobyte/runner-image
+      image: kiloexabyte/runner-image
     steps:
       - name: Clone repo into subdirectory
         run: |
