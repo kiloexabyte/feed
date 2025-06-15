@@ -4,9 +4,8 @@ const { data: youtubeVideos } = await useFetch("/api/news/youtube");
 </script>
 
 <template>
-	<div class="flex h-full w-full flex-row p-6">
+	<div class="flex h-screen w-screen flex-row">
 		<NewsFeed :articles="articles" />
-
 		<VideoFeed :videos="youtubeVideos" />
 	</div>
 </template>
