@@ -1,8 +1,6 @@
 <script setup>
 const { data: articles } = await useFetch("/api/rss")
 
-console.log(articles.value)
-
 function formatDate(dateStr) {
 	const date = new Date(dateStr)
 	return isNaN(date) ? "Unknown date" : date.toLocaleDateString()
