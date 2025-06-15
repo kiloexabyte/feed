@@ -16,9 +16,9 @@ function getYouTubeVideoId(link) {
 
 <template>
 	<div class="flex h-full w-full flex-row p-6">
-		<div class="w-1/3 h-screen">
+		<div class="h-screen w-1/3">
 			<h1 class="mb-4 text-2xl font-bold">News Feed</h1>
-			<div class="overflow-y-auto scrollbar-hide h-4/5">
+			<div class="scrollbar-hide h-4/5 overflow-y-auto">
 				<ul class="space-y-4">
 					<li
 						v-for="item in articles"
@@ -43,7 +43,7 @@ function getYouTubeVideoId(link) {
 
 		<div class="m-2 w-2/3">
 			<h2 class="mt-8 mb-4 text-xl font-bold">YouTube Videos</h2>
-			<div class="overflow-y-auto scrollbar-hide h-4/5">
+			<div class="scrollbar-hide h-4/5 overflow-y-auto">
 				<ul class="space-y-4">
 					<li
 						v-for="video in youtubeVideos"
