@@ -1,12 +1,12 @@
 <script setup lang="ts">
 type ArticleProps = {
-	title: string
-	author: string
-	publishedDate: string
-	link: string
-}
+	title: string;
+	author: string;
+	publishedDate: string;
+	link: string;
+};
 
-const props = defineProps<ArticleProps>()
+const props = defineProps<ArticleProps>();
 </script>
 
 <template>
