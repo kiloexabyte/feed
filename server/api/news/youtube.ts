@@ -2,7 +2,8 @@ import Parser from "rss-parser";
 const parser = new Parser();
 
 const YOUTUBE_CHANNELS = [
-	"UC_x5XG1OV2P6uZZ5FSM9Ttw" // Example: Google Developers
+	"UCdBXOyqr8cDshsp7kcKDAkg" // @AtriocClips
+	// "UCb9mpGh9PQjFXOG_irzrFoA" // @HowMoneyWorks
 	// Add more channel IDs as needed
 ];
 
