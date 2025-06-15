@@ -1,5 +1,5 @@
 <script setup>
-const { data: articles } = await useFetch("/api/rss");
+const { data: articles } = await useFetch("/api/news/rss");
 
 function formatDate(dateStr) {
 	const date = new Date(dateStr);
