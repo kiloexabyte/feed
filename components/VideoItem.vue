@@ -7,6 +7,4 @@ type VideoItemProps = {
 };
 </script>
 
-<template>
-    
-</template>
+<template></template>
