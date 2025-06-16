@@ -21,7 +21,11 @@ const decreasePointer = () => {
 
 <template>
 	<div class="flex flex-row">
-		<button @click="decreasePointer">prev</button>
+		<button 
+            @click="decreasePointer" 
+            class="">
+            <<<
+        </button>
 		<div class="flex w-full flex-col items-center">
 			<VideoItem
 				:title="currentVid.title"
@@ -33,6 +37,11 @@ const decreasePointer = () => {
 				{{ vidPointer + 1 }}
 			</div>
 		</div>
-		<button @click="increasePointer">next</button>
+		<button 
+            @click="increasePointer"
+            class=""
+        >
+            >>>
+        </button>
 	</div>
 </template>
