@@ -26,7 +26,11 @@ export default defineEventHandler(async () => {
 
 			allItems.push(...items);
 		} catch (err) {
-			console.error(`Failed to fetch YouTube RSS from ${url}:`, err.message);
+			if (err instanceof Error) {
+				console.error(`Failed to fetch YouTube RSS from ${url}:`, err.message);
+			} else {
+				console.error(`Failed to fetch YouTube RSS from ${url}:`, err);
+			}
 		}
 	}
 
